@@ -1,0 +1,14 @@
+<h1 class="text-center mt-5">Calculadora</h1>
+<div class="position-absolute top-50 start-50 translate-middle bg-primary  text-center rounded">
+<form>
+    <input type="number" name="num1" [(ngModel)]="num1">
+    <input type="number" name="num2" [(ngModel)]="num2">
+    <input type="number" name="resultado" disabled [(ngModel)]="resultado">
+</form>
+
+
+<button class="btn btn-primary" type="button" (click)="calc('+')">+</button>
+<button class="btn btn-primary" type="button" (click)="calc('-')">-</button>
+<button class="btn btn-primary" type="button" (click)="calc('/')">/</button>
+<button class="btn btn-primary" type="button" (click)="calc('*')">*</button>
+</div>
